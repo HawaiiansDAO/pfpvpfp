@@ -1,3 +1,12 @@
+use bevy::prelude::*;
+
+
+fn sup() {
+    println!("sup u faka!")
+}
+
 fn main() {
-    println!("Hello, world!");
+    Add::new()
+        .add_system(sup)
+        .run();
 }
